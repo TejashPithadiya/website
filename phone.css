@@ -1,0 +1,22 @@
+body {
+    /* background-color: red; */
+}
+
+.home #h2 {
+    display: none;
+}
+
+.home #h1 {
+    font-size: 20px;
+}
+
+#box {
+    top: 0;
+    left: 0;
+}
+
+#reg {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
