@@ -1,22 +1,14 @@
-body {
-    /* background-color: red; */
-}
-
 .home #h2 {
     display: none;
 }
 
 .home #h1 {
-    font-size: 20px;
+    display: none;
 }
 
-#box {
-    top: 0;
-    left: 0;
-}
 
-#reg {
-    position: absolute;
-    top: 20%;
-    left: 0;
+.center{
+    margin-top: 5vh;
+    justify-content: center;
+    flex-direction: column;
 }
