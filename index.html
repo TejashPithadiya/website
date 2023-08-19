@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="phone.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="home">
+
+
+
+        <!-- <nav class="navbar navbar-expand-sm head">
+            <a class="navbar-brand link" href="#">Home</a>
+            <a class="navbar-brand link" href="#">About us</a>
+            <a class="navbar-brand link" href="#">Services</a>
+            <a class="navbar-brand link" href="#">Contact us</a>
+
+            <button class="btn btn-success" id="button1" onclick="hide()">Login</button>
+            <button class="btn btn-success" id="button2" onclick="hide1()">Sign Up</button>
+
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#h2">Catagory</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <button class="btn btn-success" id="button1" onclick="hide()">Login</button>
+                <button class="btn btn-success" id="button2" onclick="hide1()">Sign Up</button>
+            </div>
+        </nav>
+
+        <div class="center">
+        <h1 id="h1">Login To See beautiful Plants  </h1>
+
+            <!-- login form -->
+            <div id="box">
+                <span class="borderline"></span>
+                <form action="index.html">
+                    <h2>Sign In</h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>User Name</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="">Forgot Password</a>
+                        <a href="" onclick="hide1()">sign up</a>
+                    </div>
+                    <!-- <input type="submit" value="Login"> -->
+                    <button class="btn1"><b>Login</b></button>
+                </form>
+            </div>
+
+
+            <!-- sing up form -->
+            <div id="reg">
+                <span class="borderline"></span>
+                <form action="">
+                    <h2>Sign Up</h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>User Name</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span>Confrom Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <p>you have alredy account</p>
+                        <a href="" onclick="hide()">Login</a>
+                    </div>
+                    <!-- <input type="submit" value="Login"> -->
+                    <button class="btn1"><b>Login</b></button>
+                </form>
+            </div>
+        </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script>
+    function greet() {
+        document.getElementById('h2').innerHTML = 'Login To See beautiful Plants';
+    }
+    setTimeout(greet, 3000)
+
+    // box.style.display = 'none';
+    function hide() {
+        // document.getElementById('h2').innerHTML = 'fill the given detail to see beautiful plants'
+        let btn = document.getElementById('btn1')
+        let box = document.getElementById('box')
+        if (box.style.display != 'none') {
+            box.style.display = 'none';
+        }
+        else {
+            box.style.display = 'block';
+            reg.style.display = 'none';
+        }
+    }
+
+    reg.style.display = 'none';
+    function hide1() {
+        // document.getElementById('h2').innerHTML = 'fill the given detail to create your account '
+        let btn = document.getElementById('btn2')
+        let reg = document.getElementById('reg')
+        if (reg.style.display != 'none') {
+            reg.style.display = 'none';
+        }
+        else {
+            reg.style.display = 'block';
+            box.style.display = 'none';
+        }
+    }
+</script>
+
+</html>
