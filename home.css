@@ -1,0 +1,285 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.center {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.05rem;
+    overflow: hidden;
+    z-index: 1;
+    background-color: white;
+}
+
+.card {
+
+    overflow: hidden;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.card:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.card .card-img-top {
+    transition: all 3s ease ;
+    height: 285px;
+
+}
+
+.card-text {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.card .card-img-top:hover {
+    transform: scale(1.2);
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: center;
+    flex-flow: wrap;
+    /* display: grid; */
+    margin-bottom: 15px;
+    /* grid-template-columns: ; */
+
+
+}
+
+#logo {
+    height: 40px;
+    width: 40px;
+
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+
+.nav-link {
+    color: white;
+    margin: 0 5px;
+}
+
+.nav-link.active {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+#form{
+    margin-left: auto;
+}
+
+#form button{
+    margin-left: 5px;
+}
+#form button a{
+    text-decoration: none;
+    color: #28a745;
+}
+#form button:hover a{
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#catagory {
+   
+    height: 50px;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    background-color: burlywood;
+    width: 73vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h2{
+    animation: t 2s linear forwards;
+    animation-delay: 2s;
+}
+@keyframes t{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        letter-spacing: 4px;
+    }
+}
+
+.container-sm {
+    font-size: 30px;
+}
+
+
+.container-sm a {
+    color: #28a745;
+    ;
+
+}
+
+@media (max-width:576px) {
+
+    .container-sm {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #catagory {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        width: 94vw;
+        height: 40px;
+    }
+    #h2{
+        font-size: 7vw;
+
+    }
+    .card .card-img-top{
+        height: 230px;
+    }
+}
+
+.gallary{
+   display: flex;
+   justify-content: center;
+   width: 98vw;
+
+}
+.container1{
+    display: flex;
+    width: 90vw;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background:linear-gradient(to right,#130404,#330b0b);
+    padding: 20px;
+    margin-bottom: 10px;
+
+ } 
+
+.left{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.right{
+    flex-basis: 65%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
+    grid-gap: 1rem;
+    grid-auto-rows: 190px;
+}
+.box{
+    
+   background-position: top;
+    transition: all 1s ease-in-out;
+    background-color: #222;
+    /* background-blend-mode: hard-light; */
+   
+            
+}
+.box:hover{
+    background-position: bottom;
+}
+
+
+.col2{
+    grid-column: span 2;
+}
+.row2{
+    grid-row: span 2;
+}
+  @media (max-width:500px) {
+ .box{
+    grid-column: span 3;
+    grid-row: span 1;
+    margin-left: 25px;
+    margin-right: 25px;
+ }
+ .right{
+    width: 100vw;
+    grid-auto-rows: 220px;  
+}
+
+.container1{
+    flex-direction: column;
+   
+ }
+ .left{
+    width: 100vw;
+ }
+} 
+
+
+#box1{
+    background-image: url('/img2/trending-2-2.webp');
+}   
+#box2{
+    background-image: url('/img/bg1.jpg') ;
+}
+#box3{
+    background: url('/img/slide7.jpg')no-repeat center/cover;
+}
+#box4{
+    background-image: url('/img2/trending-2-1.webp');
+    
+}
+#box5{
+    background-image: url('img2/slider-bg-2.webp');
+    
+}
+#box6{
+    background-image:  url('/img2/trending-2-3.webp');
+    
+}
+#box7{
+
+    background-image: url('/img/slide3.jpg');
+    
+}
